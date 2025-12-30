@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelir Gider - Akıllı Finans Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo-wrapper" style="display: flex; align-items: center; gap: 10px;">
+                <img src="logo.png" alt="GelirGider Logo" style="height: 40px; width: 40px; border-radius: 8px;">
+                <div class="logo">GelirGider</div>
+            </div>
+            <div class="nav-links">
+                <button onclick="toggleLang()" class="lang-switch" id="langBtn">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="logo.png" alt="GelirGider Logo" class="hero-logo">
+                <h1 id="heroTitle">Paranı Akıllıca Yönet</h1>
+                <p id="heroDesc">Gelir ve giderlerini takip et, bütçeni planla ve finansal özgürlüğüne kavuş. Sade, şık
+                    ve güçlü.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fab fa-apple"></i> App Store</a>
+                    <a href="#" class="btn btn-secondary"><i class="fab fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 id="f1Title">Detaylı Analiz</h3>
+                    <p id="f1Desc">Harcamalarını kategorilere ayır ve grafiklerle nereye ne kadar harcadığını anında
+                        gör.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3 id="f2Title">Bütçe Takibi</h3>
+                    <p id="f2Desc">Aylık bütçeni oluştur ve limitlerini aşmadan tasarruf etmeye başla.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3 id="f3Title">%100 Güvenli</h3>
+                    <p id="f3Desc">Verilerin sadece senin cihazında saklanır. Gizliliğin bizim bir numaralı
+                        önceliğimizdir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GelirGider. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="javascript:void(0)" onclick="openPrivacy()" id="privacyLink">Gizlilik Politikası</a>
+                <a href="#" id="supportLink">Destek</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacyModal" class="privacy-modal">
+        <div class="privacy-content">
+            <button class="close-privacy" onclick="closePrivacy()"><i class="fas fa-times"></i></button>
+            <div id="privacyText">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

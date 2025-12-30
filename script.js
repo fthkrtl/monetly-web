@@ -25,7 +25,7 @@ const translations = {
       <p>Uygulama içerisinde Google AdMob aracılığıyla reklamlar gösterilebilir. Bu servisler, reklam kişiselleştirmesi için cihaz tanımlayıcılarını kullanabilir.</p>
       <br>
       <h3>4. İletişim</h3>
-      <p>Gizlilik politikası hakkında sorularınız için bizimle iletişime geçebilirsiniz.</p>
+      <p>Gizlilik politikası hakkında sorularınız için bizimle fthkrtl.35@gmail.com adresinden iletişime geçebilirsiniz.</p>
     `
     },
     en: {
@@ -54,12 +54,12 @@ const translations = {
       <p>The app may display ads via Google AdMob. These services may use device identifiers for ad personalization.</p>
       <br>
       <h3>4. Contact</h3>
-      <p>For questions about the privacy policy, please contact us.</p>
+      <p>For questions about the privacy policy, please contact us at fthkrtl.35@gmail.com.</p>
     `
     }
 };
 
-let currentLang = 'tr';
+let currentLang = 'en';
 
 function toggleLang() {
     currentLang = currentLang === 'tr' ? 'en' : 'tr';
@@ -100,3 +100,6 @@ window.onclick = function (event) {
         modal.style.display = 'none';
     }
 }
+
+// Initial update
+updateContent();
